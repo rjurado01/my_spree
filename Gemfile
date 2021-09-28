@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
 # Use sqlite3 as the database for Active Record
@@ -28,10 +26,10 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-gem 'spree', github: 'spree/spree', branch: 'master'
-gem 'spree_frontend', path: '/home/rjurado/Code/spree/frontend'
-gem 'spree_backend', path: '/home/rjurado/Code/spree/backend'
-gem 'spree_sample', path: '/home/rjurado/Code/spree/sample'
+gem 'spree'
+gem 'spree_frontend'
+gem 'spree_backend'
+gem 'spree_sample'
 gem 'spree_auth_devise'
 gem 'spree_gateway'
 gem 'spree_i18n'
